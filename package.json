@@ -1,0 +1,18 @@
+{
+  "name": "mongo-poc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server",
+    "db:start": "docker run -p27017:27017 --name test-database -d mongo:latest",
+    "db:stop": "docker rm -f test-database"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

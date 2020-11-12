@@ -1,0 +1,20 @@
+// GET /documents
+GET http://localhost:3000/documents
+
+### GET /documents/search
+GET http://localhost:3000/documents/search?label=label
+
+### GET /documents/:documentId
+GET http://localhost:3000/documents/5fad504cdcb9e13d54200575
+
+### DELETE /documents/:documentId
+DELETE http://localhost:3000/documents/5fad55e2524ea33fdb4341b4
+
+### POST /documents
+POST http://localhost:3000/documents
+content-type: application/json
+
+{
+  "label": "sample to delete 2",
+  "type": "txt"
+}

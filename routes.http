@@ -2,10 +2,10 @@
 GET http://localhost:3000/documents
 
 ### GET /documents/search
-GET http://localhost:3000/documents/search?label=label
+GET http://localhost:3000/documents/search?label=sample
 
 ### GET /documents/:documentId
-GET http://localhost:3000/documents/5fad504cdcb9e13d54200575
+GET http://localhost:3000/documents/5fb6758bb5891b6fb32c5c04
 
 ### DELETE /documents/:documentId
 DELETE http://localhost:3000/documents/5fad55e2524ea33fdb4341b4
@@ -17,4 +17,12 @@ content-type: application/json
 {
   "label": "sample to delete 2",
   "type": "txt"
+}
+
+### PUT /documents
+PUT http://localhost:3000/documents/5fb6758bb5891b6fb32c5c04
+content-type: application/json
+
+{
+  "label": "updated content 10"
 }

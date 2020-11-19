@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const documentSchema = new mongoose.Schema({
+module.exports = mongoose.model('Document', new mongoose.Schema({
   label: {
     type: String,
     required: true
@@ -9,6 +9,4 @@ const documentSchema = new mongoose.Schema({
     type: String,
     required: true
   }
-});
-
-module.exports = mongoose.model('Document', documentSchema);
+}));

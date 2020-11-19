@@ -24,5 +24,5 @@ PUT http://localhost:3000/documents/5fb6758bb5891b6fb32c5c04
 content-type: application/json
 
 {
-  "label": "updated content 10"
+  "label": "updated content 11"
 }

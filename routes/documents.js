@@ -51,4 +51,14 @@ router.delete('/:documentId', async (req, res) => {
   }
 });
 
+router.put('/:documentId', async (req, res) => {
+  try {
+    const document = await Document.findByIdAndUpdate(req.params.documentId, {...req.body}, { new: true });
+    console.log(document);
+    res.status(200).json(document);
+  } catch (err) {
+    res.status(400).send('Error while deleting document', err);
+  }
+});
+
 module.exports = router;
